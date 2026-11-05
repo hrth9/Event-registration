@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Football Championship Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Energetic and modern sports typography -->
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <div class="form-container">
+        <!-- Tournament Header & Banner Visual -->
+        <div class="form-header">
+            <img src="https://unsplash.com" alt="Football Arena Lights" class="header-image">
+            <div class="header-overlay">
+                <h1>NAVY CUP 2026</h1>
+                <p>Lock In Your Squad • Arena Under The Lights</p>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <form action="#" method="POST" class="registration-form">
+            <div class="form-grid">
+                
+                <!-- Field 1: Team Name -->
+                <div class="input-group">
+                    <label for="team-name">1. Club / Team Name</label>
+                    <input type="text" id="team-name" name="teamName" placeholder="e.g., Maverick FC" required>
+                </div>
+
+                <!-- Field 2: Captain's Full Name -->
+                <div class="input-group">
+                    <label for="captain-name">2. Captain's Name</label>
+                    <input type="text" id="captain-name" name="captainName" placeholder="e.g., Alex Mercer" required>
+                </div>
+
+                <!-- Field 3: Primary Contact Email -->
+                <div class="input-group">
+                    <label for="email">3. Contact Email</label>
+                    <input type="email" id="email" name="email" placeholder="captain@club.com" required>
+                </div>
+
+                <!-- Field 4: Contact Mobile Number -->
+                <div class="input-group">
+                    <label for="phone">4. Mobile Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g., +1 555-0199" required>
+                </div>
+
+                <!-- Field 5: Squad Roster Size -->
+                <div class="input-group">
+                    <label for="squad-size">5. Roster Size (Players)</label>
+                    <input type="number" id="squad-size" name="squadSize" min="7" max="18" placeholder="Min 7 - Max 18" required>
+                </div>
+
+                <!-- Field 6: Age Category Selection -->
+                <div class="input-group">
+                    <label for="age-group">6. Age Bracket</label>
+                    <select id="age-group" name="ageGroup" required>
+                        <option value="" disabled selected>Select bracket...</option>
+                        <option value="u18">Under 18</option>
+                        <option value="adult">Adult (18+)</option>
+                        <option value="masters">Masters (35+)</option>
+                    </select>
+                </div>
+
+                <!-- Field 7: Primary Kit / Jersey Color -->
+                <div class="input-group">
+                    <label for="jersey-color">7. Primary Kit Color</label>
+                    <input type="text" id="jersey-color" name="jerseyColor" placeholder="e.g., Neon Navy / Gold" required>
+                </div>
+
+                <!-- Field 8: Alternative Kit / Away Color -->
+                <div class="input-group">
+                    <label for="away-color">8. Away Kit Color</label>
+                    <input type="text" id="away-color" name="awayColor" placeholder="e.g., All White" required>
+                </div>
+
+                <!-- Field 9: Emergency Point of Contact -->
+                <div class="input-group full-width">
+                    <label for="emergency">9. Emergency Contact (Name & Relationship)</label>
+                    <input type="text" id="emergency" name="emergencyContact" placeholder="e.g., Sarah Mercer (Manager)" required>
+                </div>
+
+                <!-- Field 10: Special Team Accommodations / Notes -->
+                <div class="input-group full-width">
+                    <label for="notes">10. Medical Alert / Special Notes</label>
+                    <input type="text" id="notes" name="specialNotes" placeholder="e.g., No dietary restrictions / Asthma alerts">
+                </div>
+
+            </div>
+
+            <!-- Mandatory Waiver Checkbox Element -->
+            <div class="checkbox-container">
+                <input type="checkbox" id="terms" name="termsAgreement" required>
+                <label for="terms">
+                    I confirm that all roster members possess valid medical clearance and agree to the competitive code of conduct.
+                </label>
+            </div>
+
+            <!-- Submit Button Trigger -->
+            <button type="submit" class="submit-btn">REGISTER FOR THE TOURNAMENT ➔</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
